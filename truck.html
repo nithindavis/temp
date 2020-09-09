@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, WebVR! • A-Frame</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
+  </head>
+  <body style="background-image: linear-gradient(#333333, #ffffff);">
+    <a-scene>
+
+      <a-entity camera="fov:30" look-controls orbit-controls="target: 0 0 0;
+      maxPolarAngle:180;
+      minDistance: 0.5;
+      maxDistance: 200;
+      initialPosition: 6 6 6"></a-entity>
+
+
+      <a-entity gltf-model="truck.gltf" position="0 0 0" scale="1 1 1"></a-entity>
+
+
+
+
+    </a-scene>
+  </body>
+</html>
