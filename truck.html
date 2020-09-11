@@ -17,6 +17,11 @@
       maxDistance: 200;
       initialPosition: 6 6 6"></a-entity>
 
+      <a-entity light="type: ambient; color: #999"></a-entity>
+      <a-light type="directional" position="6 6 6" rotation="-90 0 0" target="#directionaltarget">
+        <a-entity id="directionaltarget" position="0 0 2"></a-entity>
+      </a-light>
+
 
       <a-entity gltf-model="truck.gltf"></a-entity>
 
